@@ -100,15 +100,52 @@ Setup environment:
 
 Dashboard ini dirancang untuk menampilkan visualisasi yang jelas dan informatif tentang berbagai aspek yang berkontribusi terhadap pengunduran diri karyawan di perusahaan Jaya Jaya Maju, sekaligus menyajikan prediksi mengenai karyawan yang berpotensi meninggalkan perusahaan.
 
+**Komponen Utama Dashboard:**
 
+1.  **Metriks Awal:**
+    * **879 Total Karyawan yang Masih Bekerja:** Jumlah karyawan yang aktif bekerja.
+    * **179 Total Karyawan yang Keluar:** Jumlah karyawan yang telah meninggalkan perusahaan.
+    * **856.496 Tarif Operasional Harian:** Jumlah pengeluaran harian perusahaan untuk Operasional.
+    * **15.094.784 Tarif Operasional Bulanan:** Jumlah pengeluaran harian perusahaan untuk Operasional.
+
+2.  **Faktor-Faktor Penyebab Karyawan Keluar:**
+    * Menampilkan 10 fitur atau faktor teratas yang paling berpengaruh terhadap keputusan karyawan untuk keluar. Berdasarkan visualisasi ini, **MonthlyIncome** (Gaji Bulanan) menjadi faktor yang paling signifikan, diikuti oleh **Age** (Usia) dan **TotalWorkingYears** (Total Tahun Bekerja).
+
+3.  **Penyajian Data Berbagai Faktor:**
+    * **Distribusi Gender Karyawan:** Membandingkan jumlah karyawan berdasarkan jenis kelamin.
+    * **Distribusi Departmnent Karyawan:** Membandingkan jumlah karyawan berdasarkan departemen.
+    * **Distribusi Marital Karyawan:** Membandingkan jumlah karyawan berdasarkan status.
+    * **Distribusi Education Karyawan:** Menunjukkan distribusi tingkat pendidikan terakhir yang ditempuh karyawan.
+    * **Distribusi EducationField Karyawan:** Menunjukkan distribusi bidang pendidikan terakhir yang ditempuh karyawan.
+    * **Distribusi YearsAtCompany Karyawan:** Menunjukkan distribusi lama bekerja karyawan. 
+    * **Distribusi TotalWorkingYears Karyawan:** Menunjukkan distribusi pengabdian/tahun kerja karyawan. 
+    * **Distribusi Age Karyawan:** Menunjukkan distribusi usia karyawan.
+    * **Distribusi PerfomanceRating Karyawan:** Membandingkan jumlah karyawan berdasarkan performa.
+    * **Distribusi JobLevel Karyawan:** Membandingkan jumlah karyawan berdasarkan tingkatan pekerjaan.
+    * **Distribusi OverTime Karyawan:** Membandingkan jumlah karyawan berdasarkan jam lembur.
+    * **Distribusi DistanceFromHome Karyawan:** Menunjukkan distribusi jarak antar rumah  dan tempat kerja tiap karyawan.
+    * **Distribusi WorkLifeBalance Karyawan:** Membandingkan jumlah karyawan berdasarkan kualitas hidup.
+    * **Distribusi JobInvolvement Karyawan:** Membandingkan jumlah karyawan berdasarkan kontribusi pada pekerjaan.
+    * **Distribusi PercentSalaryHike Karyawan:** Menunjukkan distribusi jarak kemungkinan naik gaji karyawan.
+    * **Distribusi RelationshipSatisfaction Karyawan:** Menunjukkan distribusi kepuasan terhadap hubungan antar karyawan.
+    * **Distribusi EnvironmentSatisfaction Karyawan:** Menunjukkan distribusi kepuasan lingkungan kerja karyawan.
 
 ## Conclusion
 
-Jelaskan konklusi dari proyek yang dikerjakan.
+Proyek ini difokuskan untuk mengenali penyebab utama tingginya angka attrition karyawan di Jaya Jaya Maju dan menyediakan dashboard interaktif sebagai alat bantu visualisasi serta prediksi karyawan yang berisiko keluar.
+
+Dari hasil analisis data dan model Random Forest, ditemukan bahwa **Gaji Bulanan**, **Usia**, dan **Total Pengalaman Kerja** adalah faktor paling menentukan. Selain itu, **lembur dan lama bekerja di perusahaan** juga berkontribusi signifikan terhadap keputusan seorang karyawan untuk meninggalkan pekerjaannya.
+
+Model prediksi menunjukkan kinerja yang sangat baik dengan akurasi 93,32% serta metrik evaluasi lainnya seperti precision, recall, dan f1-score yang tinggi, menandakan bahwa model mampu membedakan dengan akurat antara karyawan yang bertahan dan yang keluar.
+
+*Dashboard* yang dikembangkan menampilkan data secara visual, memudahkan HR dalam melihat tren dan pola *attrition* berdasarkan berbagai aspek, serta mengidentifikasi karyawan dengan risiko tinggi secara real-time.
 
 ### Rekomendasi Action Items (Optional)
 
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
+Berdasarkan hasil temuan, berikut beberapa langkah *strategis* yang disarankan untuk Jaya Jaya Maju:
 
-- action item 1
-- action item 2
+* **Evaluasi Skema Gaji:** Karena kompensasi menjadi faktor utama attrition, penting untuk mengevaluasi ulang struktur gaji dan memastikan daya saing di pasar tenaga kerja, terutama untuk posisi yang rawan *turnover*.
+* **Program Engagement Karyawan Berdasarkan Usia dan Masa Kerja:** Mengembangkan program engagement yang ditargetkan untuk kelompok usia dan masa kerja tertentu yang menunjukkan tingkat *attrition* lebih tinggi. Misalnya, program pengembangan karir untuk karyawan muda atau program apresiasi untuk karyawan dengan masa kerja lebih pendek.
+* **Atur Kebijakan Lembur Secara Bijak:** Perusahaan perlu memastikan beban kerja tidak berlebihan. Jika lembur tidak bisa dihindari, sediakan kompensasi atau fleksibilitas kerja sebagai bentuk apresiasi.
+* **Analisis Faktor Tambahan:** Faktor seperti **Job Involvement**, **Job Level**, dan **Business Travel** juga berpengaruh dan perlu dianalisis lebih lanjut untuk memahami konteks spesifik yang memicu *attrition*.
+* **Lakukan Pendekatan pada Karyawan Berisiko Tinggi:** Gunakan hasil prediksi model untuk melakukan intervensi personal, seperti diskusi satu-satu atau penawaran insentif agar mereka merasa dihargai dan tetap bertahan.
