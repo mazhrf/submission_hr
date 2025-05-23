@@ -93,10 +93,10 @@ Setup environment:
 
 ## Business Dashboard
 
-![Dashboard 1](<riri-db1.png>)
-![Dashboard 2](<riri-db2.png>)
-![Dashboard 3](<riri-db3.png>)
-![Dashboard 4](<riri-db4.png>)
+![Dashboard 1](<ririee-dashboard1.png>)
+![Dashboard 2](<ririee-dashboard2.png>)
+![Dashboard 3](<ririee-dashboard3.png>)
+![Dashboard 4](<ririee-dashboard4.png>)
 
 Dashboard ini dirancang untuk menampilkan visualisasi yang jelas dan informatif tentang berbagai aspek yang berkontribusi terhadap pengunduran diri karyawan di perusahaan Jaya Jaya Maju, sekaligus menyajikan prediksi mengenai karyawan yang berpotensi meninggalkan perusahaan.
 
