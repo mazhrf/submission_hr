@@ -25,8 +25,6 @@ Untuk menjawab permasalahan bisnis tersebut, proyek ini bertujuan untuk:
 
 ### Cakupan Proyek
 
-### Cakupan Proyek
-
 Proyek ini akan mencakup tahapan-tahapan berikut:
 
 1. **Data Understanding**   
@@ -84,12 +82,21 @@ Setup environment:
     ```
     Hasil prediksi akan tampil sebagai output.
 
-**3. Jalankan Dashboard (Looker Studio):**
+**3. Jalankan Dashboard (Metabase w/ Docker):**
 
-  * **Link:** Pada website, akses melalui 
+  * **Instal Docker Desktop:** Unduh dan instal dari [www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/).
+  * **Pindahkan Database:** Taruh `metabase.db.mv.db` pada direektori kerja.
+  * **Tarik Image:** Pada terminal, jalankan 
     ```
-    https://lookerstudio.google.com/reporting/f3232f7a-1bbf-4d98-9977-35c62a178960
+    docker pull metabase/metabase:latest
     ```
+  * **Jalankan Container:** Ganti `/path/into/your/dir` dengan path absolut menuju direktori `metabase.db.mv.db`:
+    ```
+    docker run -d -p 3000:3000 --name metabase -v /path/into/your/dir:/metabase-data metabase/metabase
+    ```
+  * **Akses Metabase:** Buka `http://localhost:3000` di browser.
+  * **Login:** Email: `root@mail.com`, Password: `root123`.
+  * **Hubungkan Database:** Tambahkan database H2. Path database di container: `/metabase-data/metabase.db.mv.db`.
 
 ## Business Dashboard
 
