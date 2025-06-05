@@ -68,7 +68,7 @@ Setup environment:
   * **Verifikasi dir. model:** Pastikan path model dan encoder di `prediction.py` sudah benar (Ubah jika perlu).
     ```
     model = joblib.load("model/model.pkl")
-    encoder = joblib.load("model/scaler.pkl")
+    encoder = joblib.load("model/encoder.pkl")
     ```
   
   * **Instal Dependensi (jika library belum terinstall):** 
@@ -78,7 +78,7 @@ Setup environment:
   
   * **Jalankan Skrip:** Pada terminal proyek, jalankan 
     ```
-    python prediction.py
+    python predict.py
     ```
     Hasil prediksi akan tampil sebagai output.
 
@@ -102,8 +102,6 @@ Setup environment:
 
 ![Dashboard 1](<ririee-dashboard1.png>)
 ![Dashboard 2](<ririee-dashboard2.png>)
-![Dashboard 3](<ririee-dashboard3.png>)
-![Dashboard 4](<ririee-dashboard4.png>)
 
 Dashboard ini dirancang untuk menampilkan visualisasi yang jelas dan informatif tentang berbagai aspek yang berkontribusi terhadap pengunduran diri karyawan di perusahaan Jaya Jaya Maju, sekaligus menyajikan prediksi mengenai karyawan yang berpotensi meninggalkan perusahaan.
 
