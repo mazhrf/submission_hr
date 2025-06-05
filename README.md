@@ -108,32 +108,23 @@ Dashboard ini dirancang untuk menampilkan visualisasi yang jelas dan informatif 
 **Komponen Utama Dashboard:**
 
 1.  **Metriks Awal:**
+    * **1,058 Total Karyawan:** Menunjukkan jumlah total karyawan saat ini dalam perusahaan, baik yang masih aktif bekerja maupun yang sudah resign.
     * **879 Total Karyawan yang Masih Bekerja:** Jumlah karyawan yang aktif bekerja.
-    * **179 Total Karyawan yang Keluar:** Jumlah karyawan yang telah meninggalkan perusahaan.
-    * **856.496 Tarif Operasional Harian:** Jumlah pengeluaran harian perusahaan untuk Operasional.
-    * **15.094.784 Tarif Operasional Bulanan:** Jumlah pengeluaran harian perusahaan untuk Operasional.
+    * **179 Total Karyawan yang Keluar:** Jumlah karyawan yang resign.
+    * **Distribusi Employee berdasarkan Attrition:** Memvisualisasikan proporsi karyawan yang masih bekerja dan yang resign dari keseluruhan karyawan.
+    * **252 Total Karyawan yang Berpotensi Keluar (>0.5):** Jumlah karyawan dengan potensi untuk keluar.
+    * **22 Total Karyawan yang Berpotensi Tinggi Keluar (>0.6):** Jumlah karyawan yang memiliki chance/kemungkinan tinggi untuk keluar. Ini adalah kelompok yang perlu mendapatkan perhatian lebih.
 
 2.  **Faktor-Faktor Penyebab Karyawan Keluar:**
     * Menampilkan 10 fitur atau faktor teratas yang paling berpengaruh terhadap keputusan karyawan untuk keluar. Berdasarkan visualisasi ini, **MonthlyIncome** (Gaji Bulanan) menjadi faktor yang paling signifikan, diikuti oleh **Age** (Usia) dan **TotalWorkingYears** (Total Tahun Bekerja).
 
 3.  **Penyajian Data Berbagai Faktor:**
-    * **Distribusi Gender Karyawan:** Membandingkan jumlah karyawan berdasarkan jenis kelamin.
-    * **Distribusi Departmnent Karyawan:** Membandingkan jumlah karyawan berdasarkan departemen.
-    * **Distribusi Marital Karyawan:** Membandingkan jumlah karyawan berdasarkan status.
-    * **Distribusi Education Karyawan:** Menunjukkan distribusi tingkat pendidikan terakhir yang ditempuh karyawan.
-    * **Distribusi EducationField Karyawan:** Menunjukkan distribusi bidang pendidikan terakhir yang ditempuh karyawan.
-    * **Distribusi YearsAtCompany Karyawan:** Menunjukkan distribusi lama bekerja karyawan. 
-    * **Distribusi TotalWorkingYears Karyawan:** Menunjukkan distribusi pengabdian/tahun kerja karyawan. 
-    * **Distribusi Age Karyawan:** Menunjukkan distribusi usia karyawan.
-    * **Distribusi PerfomanceRating Karyawan:** Membandingkan jumlah karyawan berdasarkan performa.
-    * **Distribusi JobLevel Karyawan:** Membandingkan jumlah karyawan berdasarkan tingkatan pekerjaan.
-    * **Distribusi OverTime Karyawan:** Membandingkan jumlah karyawan berdasarkan jam lembur.
-    * **Distribusi DistanceFromHome Karyawan:** Menunjukkan distribusi jarak antar rumah  dan tempat kerja tiap karyawan.
-    * **Distribusi WorkLifeBalance Karyawan:** Membandingkan jumlah karyawan berdasarkan kualitas hidup.
-    * **Distribusi JobInvolvement Karyawan:** Membandingkan jumlah karyawan berdasarkan kontribusi pada pekerjaan.
-    * **Distribusi PercentSalaryHike Karyawan:** Menunjukkan distribusi jarak kemungkinan naik gaji karyawan.
-    * **Distribusi RelationshipSatisfaction Karyawan:** Menunjukkan distribusi kepuasan terhadap hubungan antar karyawan.
-    * **Distribusi EnvironmentSatisfaction Karyawan:** Menunjukkan distribusi kepuasan lingkungan kerja karyawan.
+    * **Distribusi Monthly Income berdasarkan Attrition:** Distribusi gaji bulanan karyawan yang masih bekerja dan resign. Terlihat bahwa karyawan dengan rentang gaji yang rendah cenderung memilih resign dari perusahaan.
+    * **Distribusi Age berdasarkan Attrition:** Distribusi usia karyawan yang masih bekerja dan resign. Faktor-U dapat menjadi insight bagi perusahaan.
+    * **Distribusi TotalWorkingYears berdasarkan Attrition:** Distribusi pengabdian karyawan (dalam tahun) yang masih bekerja dan resign. Terlihat kecenderungan karyawan pada masa awal bekerja memiliki tingkat attrition yang lebih tinggi.
+    * **Distribusi YearsAtCompany berdasarkan Attrition:** Distribusi lama bekerja karyawan (dalam tahun) yang masih bekerja dan resign. Terlihat kecenderungan karyawan pada masa awal bekerja memiliki tingkat attrition yang lebih tinggi.
+    * **Distribusi OverTime berdasarkan Attrition:** Distribusi jumlah karyawan yang masih bekerja dan resign berdasarkan kebiasaan/tradisi perusahaan (lembur). Terlihat bahwa karyawan yang sering kena shift lembur cenderung memilih resign dibandingkan dengan yang tidak.
+    * **Distribusi Gender berdasarkan Attrition:** Distribusi jumlah karyawan yang masih bekerja dan resign berdasarkan jenis kelamin. Terlihat bahwa proporsi pria lebih banyak daripada wanita.
 
 ## Conclusion
 
@@ -152,5 +143,5 @@ Berdasarkan hasil temuan, berikut beberapa langkah *strategis* yang disarankan u
 * **Evaluasi Skema Gaji:** Karena kompensasi menjadi faktor utama attrition, penting untuk mengevaluasi ulang struktur gaji dan memastikan daya saing di pasar tenaga kerja, terutama untuk posisi yang rawan *turnover*.
 * **Program Engagement Karyawan Berdasarkan Usia dan Masa Kerja:** Mengembangkan program engagement yang ditargetkan untuk kelompok usia dan masa kerja tertentu yang menunjukkan tingkat *attrition* lebih tinggi. Misalnya, program pengembangan karir untuk karyawan muda atau program apresiasi untuk karyawan dengan masa kerja lebih pendek.
 * **Atur Kebijakan Lembur Secara Bijak:** Perusahaan perlu memastikan beban kerja tidak berlebihan. Jika lembur tidak bisa dihindari, sediakan kompensasi atau fleksibilitas kerja sebagai bentuk apresiasi.
-* **Analisis Faktor Tambahan:** Faktor seperti **Job Involvement**, **Job Level**, dan **Business Travel** juga berpengaruh dan perlu dianalisis lebih lanjut untuk memahami konteks spesifik yang memicu *attrition*.
-* **Lakukan Pendekatan pada Karyawan Berisiko Tinggi:** Gunakan hasil prediksi model untuk melakukan intervensi personal, seperti diskusi satu-satu atau penawaran insentif agar mereka merasa dihargai dan tetap bertahan.
+* **Analisis Faktor Tambahan:** Faktor seperti **StockOptionLevel**, **JobSatisfaction**, dan **YearsInCurrentRole** juga berpengaruh dan perlu dianalisis lebih lanjut untuk memahami konteks spesifik yang memicu *attrition*.
+* **Lakukan Pendekatan pada Karyawan Berisiko Tinggi:** Gunakan hasil prediksi model untuk melakukan intervensi personal, seperti diskusi one-on-one atau penawaran insentif agar mereka merasa dihargai dan tetap bertahan.
