@@ -136,7 +136,7 @@ Model prediksi menunjukkan kinerja yang sangat baik dengan akurasi 95,23% serta 
 
 *Dashboard* yang dikembangkan menampilkan data secara visual, memudahkan HR dalam melihat tren dan pola *attrition* berdasarkan berbagai aspek, serta mengidentifikasi karyawan dengan risiko tinggi secara real-time. Dashboard ini diharapkan dapat membantu departemen HR dalam memantau tren attrition, memahami faktor pendorongnya, dan mengambil langkah proaktif untuk mengurangi tingkat attrition.
 
-### Rekomendasi Action Items (Optional)
+### Rekomendasi Action Items
 
 Berdasarkan hasil temuan, berikut beberapa langkah *strategis* yang disarankan untuk Jaya Jaya Maju:
 
