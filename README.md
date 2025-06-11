@@ -85,7 +85,7 @@ Setup environment:
 **3. Jalankan Dashboard (Metabase w/ Docker):**
 
   * **Instal Docker Desktop:** Unduh dan instal dari [www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/).
-  * **Pindahkan Database:** Taruh `metabase.db.mv.db` pada direektori kerja.
+  * **Pindahkan Database:** Taruh `metabase.db.mv.db` pada direktori kerja.
   * **Tarik Image:** Pada terminal, jalankan 
     ```
     docker pull metabase/metabase:latest
